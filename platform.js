@@ -37,4 +37,10 @@ broswer._2345 = /2345explorer/.test(userAgent)
 broswer.sogou = /se/.test(userAgent) &&  /metasr/.test(userAgent)
 broswer.other = !(broswer.ie || broswer.edge || broswer.firefox || broswer.safari || broswer.chrome || broswer.qq || broswer._2345 || broswer.sogou)
 
+version.edge = userAgent.match(/edge\/\d+/) ? userAgent.match(/edge\/\d+/)[0].replace(/edge\//,'') : '-1'
+version.firefox = userAgent.match(/firefox\/\d+/) ? userAgent.match(/firefox\/\d+/)[0].replace(/firefox\//,'') : '-1'
+version.chrome = userAgent.match(/chrome\/\d+/) ? userAgent.match(/chrome\/\d+/)[0].replace(/chrome\//,'') : '-1'
+version.safari = userAgent.match(/version\/\d+/) ? userAgent.match(/version\/\d+/)[0].replace(/version\//,'') : '-1'
+
+
 export  {os, broswer}
