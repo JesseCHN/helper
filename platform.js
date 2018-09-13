@@ -1,5 +1,5 @@
 const os = {mac:false,windows: false, linux:false,ios:false,android:false,other:false}
-const broswer = {ie6:false,ie7:false,ie8:false,ie9:false,ie10:false,ie11:false,edge:false,ie:false,chrome:false,firefox:false,qq:false,_2345:false,sogou:false,safari:false,other:false}
+const broswer = {ie6:false,ie7:false,ie8:false,ie9:false,ie10:false,ie11:false,edge:false,ie:false,chrome:false,firefox:false,qq:false,_2345:false,_360:false,sogou:false,safari:false,other:false}
 const macPlatform = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K']
 const windowsPlatform = ['Win32', 'Win64', 'Windows', 'WinCE']
 const iosPlatform = ['iPhone', 'iPod', 'iPad']
