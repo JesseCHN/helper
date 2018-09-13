@@ -35,7 +35,8 @@ broswer.chrome = /chrome/.test(userAgent) && /safari/.test(userAgent)
 broswer.qq = /qqbrowser/.test(userAgent)
 broswer._2345 = /2345explorer/.test(userAgent)
 broswer.sogou = /se/.test(userAgent) &&  /metasr/.test(userAgent)
-broswer.other = !(broswer.ie || broswer.edge || broswer.firefox || broswer.safari || broswer.chrome || broswer.qq || broswer._2345 || broswer.sogou)
+broswer._360 = /qihu/.test(userAgent) &&  /360se/.test(userAgent)
+broswer.other = !(broswer.ie || broswer.edge || broswer.firefox || broswer.safari || broswer.chrome || broswer.qq || broswer._2345 || broswer.sogou || broswer._360)
 
 version.edge = userAgent.match(/edge\/\d+/) ? userAgent.match(/edge\/\d+/)[0].replace(/edge\//,'') : '-1'
 version.firefox = userAgent.match(/firefox\/\d+/) ? userAgent.match(/firefox\/\d+/)[0].replace(/firefox\//,'') : '-1'
